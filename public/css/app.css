@@ -1,51 +1,11 @@
-/* Estilo para el contenedor del menú desplegable */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    display: flex;
-    justify-content: flex-end;
-}
+#app{
+    background: rgb(30,30,30);
+    background: linear-gradient(-210deg, rgba(30,30,30,1) 0%, rgba(30,30,30,1) 40%, rgb(75, 28, 41) 100%);
+    height: 100vh;
 
-/* Estilo para el botón del perfil */
-.profile-button {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    border: none;
-    border-radius: 50%; /* Hacer el botón redondo */
-    cursor: pointer;
 }
-
-/* Estilo para la imagen en el botón */
-.profile-button img {
-    width: 60px; /* Ajusta el tamaño de la imagen según tus necesidades */
-    height: 60px;
-    border-radius: 50%; /* Ajusta el radio para que sea redonda */
-    object-fit: cover;  /* Para asegurarte de que la imagen encaje en el círculo */
-}
-
-/* Estilo para el menú desplegable */
-.dropdown-content {
-    display: none;
-    position:sticky;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-}
-
-/* Estilo para los elementos del menú */
-.dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: #333;
-}
-
-/* Cambiar el color de fondo de los elementos del menú al pasar el cursor sobre ellos */
-.dropdown-content a:hover {
-    background-color: #ddd;
+.imgs{
+    background-image: url('../assets/bg.jpg');
 }
 /* Estilo para el contenedor de la lista */
 .filter-list {
@@ -67,10 +27,11 @@
 .filter-list input[type="text"] {
     width: 15vw;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #f1f1f1;
     border-radius: 30px;
     font-size: .7em;
-    color: #757575;
+    color: #dddddd;
+    background-color: transparent;
     height: 5vh;
     text-align: center;
 }
@@ -79,10 +40,11 @@
 select, #marca, #año {
     width: 11vw;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #f1f1f1;
     border-radius: 30px;
     font-size: .7em;
-    color: #757575;
+    color: #999999;
+    background-color: transparent;
     height: 5vh;
     text-align: center;
 }
@@ -158,6 +120,7 @@ select, #marca, #año {
 
 .navbar{
     height: 10vh;
+    background-color: #1E1E1E;
 }
 
 .card-overlay{
@@ -213,3 +176,38 @@ select, #marca, #año {
 .list-group::-webkit-scrollbar {
     display: none; /* Oculta la barra de desplazamiento de Chrome y navegadores compatibles */
   }
+
+.rides-list{
+    width: 100%;
+    height: 60%;
+    padding: 0;
+    margin:0px !important;
+}
+
+.ride{
+    background-color: #353535;
+    margin: 10px;
+    padding: 15px;
+    height: 45%;
+    color: white;
+    font-size: .8rem;
+    width: 90%;
+    border-radius: 10px;
+}
+.ride p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.profile-photo{
+    display: block;
+    border-radius: 50%;
+    background-color: #F61F60;
+    width: 60px;
+    height: 60px;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+

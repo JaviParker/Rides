@@ -2,12 +2,11 @@
 
 @section('content')
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-3">
+        <nav class="navbar navbar-expand-md navbar-light mb-3" style="background-color: transparent">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    <img src="{{ asset('assets/logo.png')}}" alt="" style="width: 8vw; min-width: 77px; min-height: 27">
-                    <b style="color: #F61F60; font-size: 1.5rem; font-weight: bolder; margin-left: 20px; text-align: center; vertical-align: middle;">
-                        {{ $titulo }}</b>
+                    <b style="color: white; font-size: 1.5rem; font-weight: bolder; margin-left: 20px; text-align: center; vertical-align: middle;">
+                        Avientame</b>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
